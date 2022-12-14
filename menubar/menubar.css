@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(homeimage.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 100%;   
+    position:relative; 
+}
+header .home-bg-image{
+    background-color: rgb(139, 77, 2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+.home-bg-image .container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.home-bg-image .header-nav{
+    display: flex;
+    padding: 30px;
+}
+.home-bg-image .header-nav .logo{
+    flex: 1;
+    margin: 20px;
+}
+.home-bg-image .header-nav .middle-nav{
+    flex: 3;
+    display: flex;
+}
+.home-bg-image .header-nav .middle-nav .main-nav {
+    flex: 2;
+    padding: 20px 0px;
+}
+.home-bg-image .header-nav .middle-nav .main-nav .navs {
+    display: flex;
+    justify-content: space-between;
+}
+.home-bg-image .header-nav .main-nav .navs li {
+    padding: 15px 40px;
+}
+.home-bg-image .header-nav .middle-nav .search {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.home-bg-image .header-nav .middle-nav .btn1 {
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    background: #ffffff63;
+    color: white;
+    font-weight: 600;
+}
+.home-bg-image .header-nav .theme {
+    flex: 1;
+    padding: 35px 0px;
+    justify-content: flex-end;
+}
+.home-bg-image .header-nav .theme span {
+    font-size: 30px;
+}
+.home-bg-image .header-nav .disp-menu {
+    height: 40px;
+    width: 40px;
+    margin: 30px 11px;
+    display: none;
+}
+.home-bg-image .header-nav .disp-1 .showsMenu {
+    display: none;
+}
+.home-bg-image .header-nav .disp-1:hover .showsMenu {
+    position: absolute;
+    top: 102px;
+    display: block;
+    background-color: #04213b;
+    height: auto;
+    width: 150px;
+}
+
+@media (max-width: 576px) {
+    .home-bg-image .header-nav .disp-menu {
+      display: block;
+      position: relative;
+      z-index: 0;
+    }
+    .home-bg-image .header-nav .middle-nav .main-nav {
+        display: none;
+    }
+    .home-bg-image .header-nav .middle-nav .menus {
+        z-index: 1;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        height: auto;
+        width: 200px;
+        display: block;
+        background-color: #123456;
+        transition: 1s all ease;
+      }
+      .home-bg-image .header-nav .middle-nav .menus .navs {
+        display: flex;
+        flex-direction: column;
+      }
+}
